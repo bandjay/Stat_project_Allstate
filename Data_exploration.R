@@ -11,3 +11,6 @@
 ##  Training dataset has 580 k rows approx...better use 'readr' package for loading data it is faster
 ## for exploration 'dplyr' package is faster with large data.
 ##  Apart from CARET we can use H20 package which has nice models that can do distributed modelling(faster)
+
+
+### wenke joined
