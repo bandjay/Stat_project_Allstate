@@ -1,0 +1,15 @@
+Wenke: try fused lasso for feature selection, at first with no interactions and later with 2-way interactions between predictors and PCA worked for 
+numreric varaiables so try to use prinicipal components,if possible do some data exploration.And use log transform of the "Loss" also check for transformations 
+of numeric varaiables using box-cox transaformations.(Identify problems in regression diagnostics) and try to Use Generalised linear models may be some other
+distributions(Poission).{ future work try all possible regression methodolies such as LASSO,Ridge,ANOVA of Best variables,SCAD,MCP etc.)
+
+Yuan: work on random forest models for feature selection and try to infer those features by importance and try regression model using the seleted features from 
+forest model,(Identify problems in regression diagnostics) and try to Use Generalised linear models may be some other distributions(Poission), 
+try with "boruta" package (it's takes longer to run the code) also search for other Embedded feature selection algorithms may be SVM etc(search
+the literature).Read kaggle forums and come up with some ideas.{ try with several variants of tree models CART,RF,GBM,XGboost and Extreme Random trees}
+
+Jay: Work on feature selction for categorical variables using panning algorithm / Information theory(figure out some gain metric for numeric Loss),
+Need to figure out a way to encode the categorical variables(one hot encoding for binary levels and LOO encoding for multi level),cluster the categorical 
+variables with same levels using metrics (Hamming distance,cosine similarity),pay attention two vars with just two levels.Do in depth data exploration and 
+figure out to create new features (such as combining categorical variables based on similarity).{ try SVR,H20 NNet for regression and buidling ensemble frame 
+work for the Model stacking,Model averaging etc.)
