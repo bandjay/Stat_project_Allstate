@@ -158,7 +158,7 @@ gower_mat <- as.matrix(gower_dist)
 #  which(gower_mat == min(gower_mat[gower_mat != min(gower_mat)]),
 #        arr.ind = TRUE)[1, ], ]
 
-pam_fit <- pam(train1[1:10000,2:116], diss = TRUE, k = 3)
+pam_fit <- pam(gower_dist, diss = TRUE, k = 3)
 
 #pam_results <- college_clean %>%
 #  dplyr::select(-name) %>%
@@ -170,12 +170,12 @@ pam_fit <- pam(train1[1:10000,2:116], diss = TRUE, k = 3)
 
 
 tsne_obj <- Rtsne(gower_dist, is_distance = TRUE)
-
+library(dplyr)
 tsne_data <- tsne_obj$Y %>%
   data.frame() %>%
   setNames(c("X", "Y")) %>%
   mutate(cluster = factor(pam_fit$clustering))
-
+library(ggplot2)
 ggplot(aes(x = X, y = Y), data = tsne_data) +
   geom_point(aes(color = cluster))+ggtitle("Clustering based on Categorical Vars")
                     
