@@ -1,0 +1,4 @@
+# Stat_project_Allstate
+Statistical Learning/ All state project
+
+THIS IS A COURSE PROJECT, PLEASE FIND MORE DEATAILS ON THE FINAL PROJECT REPORT TO GET A BETTER SENSE
