@@ -12,3 +12,5 @@
 ​
 #### Below is the workflow for the project
 ![workflow](https://github.com/bandjay/claims-prediction/blob/master/claims_pipeline.PNG)
+
+#### [[Project Report](https://github.com/bandjay/claims-prediction/blob/master/Final%20Project%20Report.pdf)]
