@@ -11,4 +11,4 @@
 #### Our goal for this project is to predict the (response variable) ‘loss’ of an claim based on several independent variables. These independent variables includes both continuous and categorical predictor variables, Mean Absolute Error(MAE) is the error metric that we will be minimising during the training process of several models.
 ​
 #### Below is the workflow for the project
-![workflow](https://github.com/bandjay/claims-prediction/blob/master/claims_pipeline.png)
+![workflow](https://github.com/bandjay/claims-prediction/blob/master/claims_pipeline.PNG)
